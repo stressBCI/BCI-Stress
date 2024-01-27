@@ -1,4 +1,22 @@
-% Load the EEG data
+%%% incomplete notes - rishabh %%%
+
+%{
+-- In --
+    Preprocessed EEG data
+
+-- Process --
+1.  Load preprocessed data
+2.  Get rows 1-5
+3.  Using each electrode channel(Fp1, Fp2, Fz, Cz), compute features.
+    a.  PSD (Power Spectral Density): use Welch's method https://www.mathworks.com/help/signal/ref/pwelch.html
+        - https://www.youtube.com/watch?v=NLyBXyBMIrY
+    
+-- Out --
+    Extracted features
+%}
+
+
+
 dataStruct = load('/Users/aarooshbalakrishnan/Documents/MATLAB/matlab.mat');
 
 % Access the 'AOO1stress' field within the structure
